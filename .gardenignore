@@ -1,0 +1,11 @@
+# main
+.*
+*.html
+CNAME
+README.md
+package-lock.json
+package.json
+
+# additional
+views/
+src/
