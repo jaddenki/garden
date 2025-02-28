@@ -1,3 +1,3 @@
-[file.gallery](file.gallery) ([code](https://github.com/inchkev/file-gallery))
+[file.gallery](https://file.gallery) ([code](https://github.com/inchkev/file-gallery))
 
-[kevin.garden](kevin.garden)
+[kevin.garden](https://kevin.garden)
