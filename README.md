@@ -6,7 +6,9 @@ but also `npm i`
 
 ### changelog
 
-- 4/26/25: performance enhancements, parallelize async operations
+- 4/26/25:
+  - performance enhancements, parallelize async operations
+  - sort order is now name localeAware, might affect some display orders. previously, it was in the order readdir() returned
 - 2/16/25: tweaked `formal.ejs` to be a bit less formal
 - 4/12/24: add text-size-adjust (and webkit equiv)
 - 4/8/24: for markdown files,
