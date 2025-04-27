@@ -307,7 +307,7 @@ async function cultivate(rootPath, relativePath = '.', currDir = '', icvp = null
     }
 
     // process them all asynchronously
-    dirData.files = await Promise.all([
+    let processedFiles = await Promise.all([
         ...directoriesToProcess.map(async directoryName => {
             const fileInfo = await cultivateDirectory(
                 directoryName, dirDS_Store, currPath, relativePath, depth
@@ -325,6 +325,8 @@ async function cultivate(rootPath, relativePath = '.', currDir = '', icvp = null
             return fileInfo;
         })
     ]);
+    processedFiles.sort((a, b) => a.name.localeCompare(b.name));
+    dirData.files = processedFiles;
 
     if (renderFreeform && !dirData.files.every(fileInfo => 'location' in fileInfo)) {
         renderFreeform = false;
