@@ -1,8 +1,11 @@
-## file.gallery
+## [file.gallery](https://file.gallery/)
 
-to setup, please read [https://github.com/inchkev/garden/blob/main/README.md](https://github.com/inchkev/garden/blob/main/README.md)
+germinate a site from files, directories, and .DS_Store.
 
-but also `npm i`
+### setup
+
+- `npm i`
+- read [https://github.com/inchkev/garden/blob/main/README.md](https://github.com/inchkev/garden/blob/main/README.md)
 
 ### changelog
 
@@ -18,3 +21,12 @@ but also `npm i`
 - 10/9/23: added max recursion depth argument, defaults to 3
 - 10/6/23: you can `node cultivate.js DIR` now!
   - just be very careful what directory you specify...
+
+### license
+
+- `src/` — `parse.py` by [Thomas Zhu](https://github.com/hanwenzhu) is licensed under the MIT license. all other source code (in `src/`) is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+  - if modified, indicate it by adding it to the header comment, e.g. "modified by \[name\]: add jpeg xl support"
+- `views/` — all templates and their styles are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+  - if modified, indicate it in the attribution, e.g. "modified by \[name\]"
+
+for published websites, CC attribution only in the html source is sufficient. i'd appreciate a link to https://kevin.garden/ or https://file.gallery/ in the attribution. a visible reference on the website itself would be nice too. thank you!
