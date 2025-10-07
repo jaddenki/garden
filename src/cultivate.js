@@ -162,6 +162,7 @@ async function cultivateFile(fileName, currPath) {
         case 'svg':
         case 'bmp':
         case 'ico':
+        case 'heic':
             fileInfo.type = 'image';
             try {
                 let dimensions = imageSize(filePath);
