@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>garden.jadden.xyz</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <meta name="author" content="jadden">
-  <meta name="description" content="gallery.jadden.xyz is a site sown from files and directories.">
+  <meta name="author" content="file.gallery">
+  <meta name="description" content="garden.jadden.xyz is a site sown from files and directories.">
 
   <style>
     html, body {
+      height: 100%;
       margin: 0;
       text-size-adjust: none;
       -webkit-text-size-adjust: 100%;
@@ -20,24 +21,31 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       overflow-x: scroll;
-      
     }
     main {
+      max-width: 100%;
       box-sizing: border-box;
+      align-items: center;
       padding: 1.5em;
     }
-    .item {
-      display: inline-block;
-      padding: 0em 1em;
-      margin: 1em 0;
-      border: 1px solid rgba(0,0,0,.1);
+    .plantbed {
+      width: 0;
+      position: relative;
     }
-    .item img, .item video {
-      width: auto; height: auto;
-      max-width: 28em; max-height: 26em;
+    .item {
+      display: block;
+      position: absolute;
+      padding: 0em 1em;
+      outline: 1px solid rgba(0,0,0,0.1);
+    }
+    .item * {
+      width: max-content;
+    }
+    .item img, .item video, .item audio {
+      max-width: 18em;
+      height: auto;
     }
     .item audio {
-      max-width: 18em;
       height: 3em;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -64,76 +72,92 @@
 <body>
   <main>
 
-    <div class="plantbed">
-      <div class="item">
+    <div class="plantbed" style="left: max(0px, calc(50% - 334px - 9em))">
+      <div class="item" style="top: 287px; left: 215px">
         <h3><a href="_.webp">_.webp</a> (4.37MB)</h3>
         <a href="_.webp">
           <img src="_.webp" alt="_.webp" width="4000" height="3000">
         </a>
       </div>
-      <div class="item">
+      <div class="item" style="top: 55px; left: 426px">
         <h3>2024</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 116px; left: 440px">
         <h3><a href="2024_05-prague/">2024_05-prague/</a> (14 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 133px; left: 441px">
         <h3><a href="2024_10-indy/">2024_10-indy/</a> (13 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 55px; left: 649px">
         <h3>2025</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 116px; left: 668px">
         <h3><a href="2025_03-spring-break/">2025_03-spring-break/</a> (30 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 133px; left: 667px">
         <h3><a href="2025_06-sf/">2025_06-sf/</a> (97 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 153px; left: 667px">
         <h3><a href="2025_07-vegas/">2025_07-vegas/</a> (12 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 171px; left: 667px">
         <h3><a href="2025_08-big-bear/">2025_08-big-bear/</a> (18 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 192px; left: 667px">
         <h3><a href="2025_08-nyc/">2025_08-nyc/</a> (11 items)</h3>
       </div>
-      <div class="item">
-        <h3><a href="about.md">about.md</a> (151B)</h3>
+      <div class="item" style="top: 166px; left: 1px">
+        <h3><a href="about.md">about.md</a> (150B)</h3>
         <div class="md">
           <p>hi, i&#39;m <a href="https://jadden.xyz">jadden</a>! here is my website sown from my files &lt;3<br><br>
 i&#39;d like to share fun memories with family and friends on here!</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item" style="top: 334px; left: 613px">
+        <h3>alicia was here ^_^</h3>
+      </div>
+      <div class="item" style="top: 50px; left: 0px">
         <h3>CNAME</h3>
         <pre>garden.jadden.xyz
 </pre>
       </div>
-      <div class="item">
+      <div class="item" style="top: 598px; left: 647px">
         <h3><a href="credits.md">credits.md</a> (86B)</h3>
         <div class="md">
           <p>i forked <a href="https://file.gallery">file.gallery</a>, by <a href="https://kevin.garden">kevin.garden</a></p>
         </div>
       </div>
-      <div class="item">
+      <div class="item" style="top: 377px; left: 614px">
+        <h3><a href="face.md">face.md</a> (34B)</h3>
+        <div class="md">
+          <p>𐔌՞. .՞𐦯
+    ₍^. .^₎⟆</p>
+        </div>
+      </div>
+      <div class="item" style="top: 380px; left: 14px">
         <h3><a href="favicon.png">favicon.png</a> (168B)</h3>
         <a href="favicon.png">
           <img src="favicon.png" alt="favicon.png" width="32" height="32">
         </a>
       </div>
-      <div class="item">
+      <div class="item" style="top: 536px; left: 274px">
+        <h3><a href="files.png">files.png</a> (521kB)</h3>
+        <a href="files.png">
+          <img src="files.png" alt="files.png" width="1930" height="1972">
+        </a>
+      </div>
+      <div class="item" style="top: 530px; left: 12px">
         <h3>last updated</h3>
-        <pre>2025-05-23
+        <pre>2025-10-10
 </pre>
       </div>
-      <div class="item">
-        <h3><a href="LICENSE">LICENSE</a> (11.6kB)</h3>
+      <div class="item" style="top: 665px; left: 646px">
+        <h3><a href="LICENSE">LICENSE</a> (11.4kB)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 679px; left: 13px">
         <h3><a href="src/">src/</a> (2 items)</h3>
       </div>
-      <div class="item">
+      <div class="item" style="top: 646px; left: 13px">
         <h3><a href="views/">views/</a> (2 items)</h3>
       </div>
     </div>
@@ -141,7 +165,7 @@ i&#39;d like to share fun memories with family and friends on here!</p>
   </main>
 </body>
 <!--
-kevin.garden (formal template) by Kevin Chen, 2023-2025
+kevin.garden (natural template) by Kevin Chen, 2023-2025
 licensed under CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
 please link to https://kevin.garden/ or https://file.gallery/, if possible
 attribution only in the html source is sufficient. non-commercial use only :)

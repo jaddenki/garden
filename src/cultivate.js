@@ -252,7 +252,7 @@ async function cultivate(rootPath, relativePath = '.', currDir = '', icvp = null
         title: (relativePath != '.' ? relativePath + '/' : ''),
     };
 
-    let renderFreeform = false;
+    let renderFreeform = true;
 
     if (icvp) {
         renderFreeform = icvp['arrangeBy'] === 'none' || icvp['arrangeBy'] === 'grid';
